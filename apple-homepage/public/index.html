@@ -5,11 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/e5843b7c3a.js" crossorigin="anonymous"></script>
   <title>Apple</title>
 </head>
 <body class="bg-black">
-  <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3">
+  <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 bg-black">
     <div class="container px-4 max-auto flex flex-wrap items-center justify-between">
       <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
         <a href="#home" class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">Home</a>
@@ -50,6 +51,24 @@
       </div>
     </div>
   </nav>
+  <main>
+    <div class="relative pt-16 lg:pb-32 flex content-center items-center justify-center min-h-home-lg" id="home">
+      <div class="absolute w-full h-full">
+        <video autoplay muted class="top-0 bg-center">
+          <source src="https://www.apple.com/105/media/us/macbook-pro-13/2020/f2b14406-42ad-405e-bfa0-71b52a0bfd67/anim/chip/large.mp4">
+        </video>
+      </div>
+      <div class="container relative mx-auto hidden md:block ">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="pr-12">
+              <div class="text-white font-semibold text-5xl -mt-32">Welcome to Apple</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <script>
     function toggleNavbar(collapseId) {
       document.getElementById(collapseId).classList.toggle('hidden');
